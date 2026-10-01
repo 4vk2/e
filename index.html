@@ -17,8 +17,8 @@ a:hover{text-decoration:underline}
 h1,h2,h3{font-weight:300;color:var(--white);margin:0;text-transform:uppercase}
 header{background:var(--head);border-bottom:2px solid #1a1a1a}
 header .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;min-height:90px}
-.logo{font:800 44px/1 Impact,"Arial Black",sans-serif;color:var(--white);letter-spacing:-2px;border-bottom:5px solid var(--green);padding-bottom:2px}
-.logo span{color:var(--green)}
+.logo{display:block;line-height:0}
+.logo img{height:46px;width:auto;display:block}
 nav a{color:var(--text);text-transform:uppercase;letter-spacing:1px;margin-left:34px}
 nav a:hover{color:var(--white);text-decoration:none}
 .hero{background:linear-gradient(#1e1e1e,#2b2a26 60%,#211f1b);padding:80px 0;text-align:center}
@@ -68,11 +68,12 @@ footer h3:after{content:"";position:absolute;left:0;bottom:0;width:50px;height:2
 @media(max-width:520px){.team{grid-template-columns:repeat(2,1fr)}}
 [hidden]{display:none!important}.page{min-height:50vh}
 .flist{max-width:720px;margin:0 auto}.frow{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);text-align:left}.frow b{color:var(--white);font-weight:400;word-break:break-all}.frow small{display:block;color:#777}
+.fimg{max-width:100%;height:auto;display:block}
 </style>
 </head>
 <body>
 <header><div class="wrap">
-<a class="logo" href="#">L<span>T</span>S</a>
+<a class="logo" href="#"><img src="logo.png" alt="LTS"></a>
 <nav><a href="#">Home</a><a href="#files">Community Files</a><a href="https://discord.gg/c6EFCg6fQ7" target="_blank" rel="noopener">Support</a></nav>
 </div></header>
 
@@ -132,10 +133,7 @@ footer h3:after{content:"";position:absolute;left:0;bottom:0;width:50px;height:2
 </div>
 
 <footer><div class="wrap">
-<div class="news"><h3>Recent News</h3>
-<div><a href="#">A new webMAN Control utility has been added to the dashboard...</a><small>10th February, 2026</small></div>
-<div><a href="#">LTS SPRX Mod Menu for Re:V 1.27 Update v2.9.7 is released, g...</a><small>7th February, 2026</small></div>
-<div><a href="#">LTS RECOVERY SPRX is back in FREE access for Re:V 1.27, get ...</a><small>10th December, 2025</small></div></div>
+<div><img class="fimg" src="image.png" alt="LastTeamStanding"></div>
 <div class="links"><h3>Useful Links</h3><a href="#">Home</a><a href="#files">Community Files</a><a href="https://discord.gg/c6EFCg6fQ7" target="_blank" rel="noopener">Support</a><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div>
 </div></footer>
 <div class="copy"><div class="wrap"><span>Copyright © 2014 - 2026 All Rights Reserved | <a href="#">Terms of Use</a> | <a href="#">Privacy and Policy</a> | <a href="https://discord.gg/c6EFCg6fQ7" target="_blank" rel="noopener">Support</a></span></div></div>
